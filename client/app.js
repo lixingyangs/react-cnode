@@ -6,7 +6,6 @@ import App from './App.jsx'
 // ReactDom.hydrate(<App />, document.getElementById('#root'))
 
 if(module.hot) {
-    debugger
     module.hot.accept('./App.jsx', () => {
         const  NextApp = require('./App.jsx').default
         ReactDom.hydrate(<NextApp />, document.getElementById('#root'))
